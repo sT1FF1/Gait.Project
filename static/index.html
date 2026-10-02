@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gait</title>
+<style>
+:root{color-scheme:dark light}
+body{font:16px system-ui;max-width:900px;margin:0 auto;padding:16px;background:#111;color:#eee}
+@media(prefers-color-scheme:light){body{background:#fafafa;color:#111}}
+textarea,select,input,button{font:inherit;width:100%;box-sizing:border-box;padding:8px;margin:4px 0;border-radius:6px;border:1px solid #666;background:transparent;color:inherit}
+button{background:#5b5bd6;color:#fff;border:0;cursor:pointer}button:disabled{opacity:.5}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px}
+#gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px;margin-top:16px}
+#gallery img{width:100%;border-radius:6px}#err{color:#f66}
+</style></head><body>
+<h1>Gait</h1>
+<select id="model"></select>
+<textarea id="prompt" rows="3" placeholder="Промпт"></textarea>
+<textarea id="neg" rows="2" placeholder="Негативный промпт"></textarea>
+<div class="row">
+<input id="steps" type="number" placeholder="Steps"><input id="guidance" type="number" step="0.5" placeholder="CFG">
+<input id="width" type="number" placeholder="Width"><input id="height" type="number" placeholder="Height">
+<input id="seed" type="number" placeholder="Seed">
+</div>
+<button id="go">Сгенерировать</button><div id="err"></div><div id="gallery"></div>
+<script>
+const $=id=>document.getElementById(id);let models=[];
+fetch('/api/models').then(r=>r.json()).then(m=>{models=m;$('model').innerHTML=m.map(x=>`<option value="${x.id}">${x.name}</option>`).join('');fill()});
+function fill(){const d=(models.find(m=>m.id==$('model').value)||{}).defaults||{};for(const k of['steps','guidance','width','height'])$(k).value=d[k]??''}
+$('model').onchange=fill;
+$('go').onclick=async()=>{
+  $('go').disabled=true;$('err').textContent='';
+  const n=k=>$(k).value===''?null:Number($(k).value);
+  try{
+    const r=await fetch('/api/generate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model:$('model').value,prompt:$('prompt').value,negative_prompt:$('neg').value,steps:n('steps'),guidance:n('guidance'),width:n('width'),height:n('height'),seed:n('seed')})});
+    const j=await r.json();if(!r.ok)throw new Error(j.detail);
+    const i=new Image();i.src=j.url;$('gallery').prepend(i);
+  }catch(e){$('err').textContent=e.message}
+  $('go').disabled=false};
+</script></body></html>
