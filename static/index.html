@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gait</title>
+<style>
+:root{--bg:#0d0b14;--panel:#171322;--line:#2a2340;--text:#ece8f6;--muted:#9a90b5;--a:#ff4d8d;--b:#7c4dff}
+@media(prefers-color-scheme:light){:root{--bg:#f6f3fb;--panel:#fff;--line:#e0d9ef;--text:#1c1630;--muted:#6f6688}}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;font:15px/1.4 system-ui,sans-serif;background:var(--bg);color:var(--text)}
+header{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:5}
+h1{margin:0;font-size:22px;background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+main{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:16px;padding:16px;max-width:1400px;margin:0 auto}
+@media(max-width:900px){main{grid-template-columns:1fr}}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.tab{padding:9px 16px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--text);cursor:pointer;font:inherit;transition:.15s}
+.tab:hover{border-color:var(--a)}
+.tab.on{background:linear-gradient(135deg,var(--a),var(--b));border-color:transparent;color:#fff;box-shadow:0 4px 14px #7c4dff55}
+.tab small{opacity:.8;margin-left:4px}
+.group{margin:12px 0}
+.group h3{margin:0 0 6px;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);display:flex;justify-content:space-between}
+.group h3 a{cursor:pointer;color:var(--a);text-transform:none;letter-spacing:0}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{padding:7px 13px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--text);cursor:pointer;font:inherit;font-size:14px;transition:transform .1s,background .15s}
+.chip:hover{transform:translateY(-1px);border-color:var(--a)}
+.chip.on{background:linear-gradient(135deg,var(--a),var(--b));border-color:transparent;color:#fff;box-shadow:0 3px 10px #ff4d8d44}
+input,textarea,select{width:100%;font:inherit;color:var(--text);background:transparent;border:1px solid var(--line);border-radius:10px;padding:9px;margin:4px 0}
+textarea{resize:vertical}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(90px,1fr));gap:8px}
+label{font-size:12px;color:var(--muted)}
+.btn{display:block;width:100%;padding:13px;border:0;border-radius:12px;font:600 16px system-ui;color:#fff;cursor:pointer;background:linear-gradient(135deg,var(--a),var(--b));box-shadow:0 6px 20px #7c4dff55;transition:.15s}
+.btn:hover{filter:brightness(1.1);transform:translateY(-1px)}.btn:disabled{opacity:.5;cursor:wait;transform:none}
+.btn.ghost{background:transparent;border:1px solid var(--line);box-shadow:none;color:var(--text);font-weight:500;padding:9px}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+#preview{font-size:13px;color:var(--muted);word-break:break-word;min-height:40px;border:1px dashed var(--line);border-radius:10px;padding:8px;margin:6px 0}
+#gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin-top:14px}
+#gallery img,#gallery video{width:100%;border-radius:12px;border:1px solid var(--line)}
+#err{color:#ff6b6b;margin-top:8px}#status{color:var(--muted);margin-top:8px}
+#gate{position:fixed;inset:0;background:var(--bg);z-index:20;display:flex;align-items:center;justify-content:center;padding:20px}
+#gate div{max-width:420px;text-align:center}
+.note{font-size:12px;color:var(--muted)}
+</style></head><body>
+<div id="gate" hidden><div>
+<h1>Gait</h1><p>Сервис содержит материалы 18+. Продолжая, вы подтверждаете, что вам исполнилось 18 лет, и обязуетесь не создавать изображения реальных людей без их согласия и любой контент с несовершеннолетними.</p>
+<button class="btn" id="enter">Мне есть 18, войти</button></div></div>
+<header><h1>Gait</h1>
+<div class="tabs" id="mode" style="margin:0 0 0 auto">
+<button class="tab on" data-m="image">Фото</button><button class="tab" data-m="video">Видео</button></div></header>
+<main>
+<section class="panel">
+<div class="tabs" id="cats"></div>
+<input id="search" placeholder="Поиск по всем опциям…">
+<div id="groups"></div>
+</section>
+<section>
+<div class="panel">
+<label>Модель</label><select id="model"></select>
+<label>Свой текст (в начало промпта)</label><textarea id="prompt" rows="2" placeholder="Например: имя, детали, что-то своё"></textarea>
+<label>Итоговый промпт</label><div id="preview"></div>
+<label>Негативный промпт</label><textarea id="neg" rows="2"></textarea>
+<div class="row">
+<div><label>Steps</label><input id="steps" type="number"></div>
+<div><label>CFG</label><input id="guidance" type="number" step="0.5"></div>
+<div><label>Ширина</label><input id="width" type="number" step="8"></div>
+<div><label>Высота</label><input id="height" type="number" step="8"></div>
+<div><label>Seed</label><input id="seed" type="number" placeholder="случ."></div>
+</div>
+<div id="vbox" hidden><label>Длительность: <b id="dval">5</b> с</label>
+<input id="duration" type="range" min="5" max="30" step="1" value="5" style="padding:0">
+<div class="note">Чем длиннее ролик, тем дольше и тяжелее генерация.</div></div>
+<div class="btns" style="margin-top:10px">
+<button class="btn ghost" id="rand">🎲 Случайно</button><button class="btn ghost" id="clear">Сбросить</button></div>
+<button class="btn" id="go" style="margin-top:10px">Сгенерировать</button>
+<div id="status"></div><div id="err"></div>
+</div>
+<div id="gallery"></div>
+</section></main>
+<script>
+const $=id=>document.getElementById(id);
+let models=[],cat=null,mode='image',sel={};            // sel[catId]: Map key(group|label) -> tags
+let catalog={categories:[]};
+const key=(g,i)=>g+'|'+i.label;
+
+// 18+ gate
+try{if(!localStorage.getItem('gait18'))$('gate').hidden=false}catch(e){$('gate').hidden=false}
+$('enter').onclick=()=>{try{localStorage.setItem('gait18','1')}catch(e){};$('gate').hidden=true};
+
+Promise.all([fetch('/api/models').then(r=>r.json()),fetch('/api/catalog').then(r=>r.json())]).then(([m,c])=>{
+  models=m;catalog=c;catalog.categories.forEach(x=>sel[x.id]=new Map());cat=catalog.categories[0].id;
+  renderModels();renderCats();renderGroups();update()});
+
+function renderModels(){
+  const list=models.filter(m=>m.kind===mode);
+  $('model').innerHTML=list.map(x=>`<option value="${x.id}">${x.name}</option>`).join('')||'<option value="">нет моделей этого типа</option>';
+  fill()}
+function fill(){const m=models.find(x=>x.id===$('model').value);const d=(m||{}).defaults||{};
+  for(const k of['steps','guidance','width','height'])$(k).value=d[k]??'';
+  $('neg').placeholder=d.negative_prompt?('по умолчанию: '+d.negative_prompt):''}
+$('model').onchange=fill;
+$('mode').onclick=e=>{const b=e.target.closest('.tab');if(!b)return;mode=b.dataset.m;
+  document.querySelectorAll('#mode .tab').forEach(t=>t.classList.toggle('on',t===b));
+  $('vbox').hidden=mode!=='video';renderModels()};
+$('duration').oninput=()=>$('dval').textContent=$('duration').value;
+
+function renderCats(){
+  $('cats').innerHTML=catalog.categories.map(c=>`<button class="tab ${c.id===cat?'on':''}" data-c="${c.id}">${c.name}<small>${sel[c.id].size||''}</small></button>`).join('')}
+$('cats').onclick=e=>{const b=e.target.closest('.tab');if(!b)return;cat=b.dataset.c;$('search').value='';renderCats();renderGroups()};
+$('search').oninput=renderGroups;
+
+function renderGroups(){
+  const q=$('search').value.trim().toLowerCase();
+  const cats=q?catalog.categories:catalog.categories.filter(c=>c.id===cat);
+  let html='';
+  for(const c of cats)for(const g of c.groups){
+    const items=g.items.filter(i=>!q||i.label.toLowerCase().includes(q)||i.tags.toLowerCase().includes(q));
+    if(!items.length)continue;
+    html+=`<div class="group"><h3><span>${q?c.name+' · ':''}${g.name}</span>${c.select==='multi'?`<a data-clear="${c.id}|${g.name}">сброс</a>`:''}</h3><div class="chips">`+
+      items.map(i=>`<button class="chip ${sel[c.id].has(key(g.name,i))?'on':''}" data-c="${c.id}" data-g="${g.name}" data-l="${i.label}">${i.label}</button>`).join('')+`</div></div>`}
+  $('groups').innerHTML=html||'<p class="note">Ничего не найдено</p>'}
+
+function toggle(cid,gname,label){
+  const c=catalog.categories.find(x=>x.id===cid),g=c.groups.find(x=>x.name===gname),i=g.items.find(x=>x.label===label);
+  const m=sel[cid],k=key(gname,i);
+  if(m.has(k)){m.delete(k);return}
+  if(c.select==='category')m.clear();
+  if(c.select==='group')for(const x of[...m.keys()])if(x.startsWith(gname+'|'))m.delete(x);
+  m.set(k,i.tags)}
+$('groups').onclick=e=>{
+  const ch=e.target.closest('.chip');
+  if(ch){toggle(ch.dataset.c,ch.dataset.g,ch.dataset.l)}
+  const cl=e.target.closest('[data-clear]');
+  if(cl){const[c,g]=cl.dataset.clear.split('|');for(const k of[...sel[c].keys()])if(k.startsWith(g+'|'))sel[c].delete(k)}
+  if(ch||cl){renderCats();renderGroups();update()}};
+
+function build(){
+  const parts=[];if($('prompt').value.trim())parts.push($('prompt').value.trim());
+  // порядок: внешность, поза, одежда, действие, сцена, камера
+  for(const id of['look','pose','outfit','action','scene','camera'])for(const t of(sel[id]||new Map()).values())parts.push(t);
+  return parts.join(', ')}
+function update(){$('preview').textContent=build()||'— выбери опции слева —'}
+$('prompt').oninput=update;
+
+$('clear').onclick=()=>{catalog.categories.forEach(c=>sel[c.id].clear());renderCats();renderGroups();update()};
+$('rand').onclick=()=>{
+  catalog.categories.forEach(c=>sel[c.id].clear());
+  for(const c of catalog.categories){
+    if(c.select==='multi'){const all=c.groups.flatMap(g=>g.items.map(i=>[g.name,i]));
+      for(let n=0;n<2;n++){const[g,i]=all[Math.random()*all.length|0];sel[c.id].set(key(g,i),i.tags)}}
+    else if(c.select==='category'){const all=c.groups.flatMap(g=>g.items.map(i=>[g.name,i]));const[g,i]=all[Math.random()*all.length|0];sel[c.id].set(key(g,i),i.tags)}
+    else for(const g of c.groups){const i=g.items[Math.random()*g.items.length|0];sel[c.id].set(key(g.name,i),i.tags)}}
+  renderCats();renderGroups();update()};
+
+$('go').onclick=async()=>{
+  const prompt=build();if(!prompt){$('err').textContent='Выбери опции или введи текст';return}
+  $('go').disabled=true;$('err').textContent='';$('status').textContent=mode==='video'?'Генерирую видео, это может занять несколько минут…':'Генерирую…';
+  const n=k=>$(k).value===''?null:Number($(k).value);
+  const body={model:$('model').value,prompt,negative_prompt:$('neg').value,steps:n('steps'),guidance:n('guidance'),width:n('width'),height:n('height'),seed:n('seed')};
+  if(mode==='video')body.duration=Number($('duration').value);
+  try{
+    const r=await fetch(mode==='video'?'/api/generate-video':'/api/generate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+    const j=await r.json();if(!r.ok)throw new Error(typeof j.detail==='string'?j.detail:JSON.stringify(j.detail));
+    let el;if(j.kind==='video'&&j.ext!=='gif'){el=document.createElement('video');el.controls=el.loop=el.muted=true;el.autoplay=true}else el=new Image();
+    el.src=j.url;$('gallery').prepend(el);$('status').textContent='Готово'}
+  catch(e){$('err').textContent=e.message;$('status').textContent=''}
+  $('go').disabled=false};
+</script></body></html>

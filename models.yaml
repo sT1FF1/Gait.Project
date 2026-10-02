@@ -1,0 +1,58 @@
+# Каждая запись — одна модель в выпадающем списке.
+# backend: diffusers (локально) | a1111 (удалённый WebUI/Forge API) | comfyui
+# defaults.prompt_prefix / prompt_suffix / negative_prompt добавляются к каждому запросу автоматически
+# (например, служебные теги качества, которые требуют Pony/Illustrious-подобные чекпоинты).
+models:
+  - id: sdxl-local
+    name: "SDXL checkpoint (local)"
+    backend: diffusers
+    # путь к .safetensors (например, скачанный с Civitai) или id репозитория на Hugging Face
+    path: models/my-sdxl-checkpoint.safetensors
+    pipeline: sdxl          # sdxl | sd15
+    defaults:
+      steps: 28
+      guidance: 6.0
+      width: 832
+      height: 1216
+      prompt_prefix: "score_9, score_8_up, score_7_up,"   # пример для Pony-based; убери, если не нужно
+      prompt_suffix: "photorealistic, raw photo, detailed skin texture, natural lighting"
+      negative_prompt: "score_4, score_3, blurry, lowres, bad anatomy, extra fingers, watermark, text"
+
+  - id: sd15-local
+    name: "SD 1.5 checkpoint (local)"
+    backend: diffusers
+    path: models/my-sd15-checkpoint.safetensors
+    pipeline: sd15
+    defaults: {steps: 25, guidance: 7.0, width: 512, height: 768}
+
+  - id: webui-remote
+    name: "A1111 / Forge (remote)"
+    backend: a1111
+    url: http://127.0.0.1:7860
+    checkpoint: null        # null = текущий чекпоинт на стороне WebUI
+    defaults: {steps: 28, guidance: 6.0, width: 832, height: 1216}
+
+  - id: comfy-remote
+    name: "ComfyUI"
+    backend: comfyui
+    url: http://127.0.0.1:8188
+    checkpoint: my-checkpoint.safetensors   # имя файла из ComfyUI/models/checkpoints
+    # workflow_file: workflows/my_workflow.json  # свой граф (Save (API Format)) с плейсхолдерами {{prompt}} и т.д.
+    defaults: {steps: 28, guidance: 6.0, width: 832, height: 1216}
+
+  # Видео: нужен workflow_file (Save (API Format)) с плейсхолдерами {{prompt}}, {{negative_prompt}},
+  # {{width}}, {{height}}, {{steps}}, {{guidance}}, {{seed}}, {{frames}}, {{fps}}.
+  # Подойдут Wan 2.x / AnimateDiff / HunyuanVideo графы + нода сохранения видео (VideoHelperSuite).
+  - id: comfy-video
+    name: "ComfyUI видео (Wan и др.)"
+    kind: video
+    backend: comfyui
+    url: http://127.0.0.1:8188
+    workflow_file: workflows/video.json
+    timeout: 3600
+    defaults:
+      steps: 20
+      guidance: 5.0
+      width: 640
+      height: 640
+      fps: 16

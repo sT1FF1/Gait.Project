@@ -1,0 +1,2133 @@
+{
+ "categories": [
+  {
+   "id": "look",
+   "name": "Внешность",
+   "groups": [
+    {
+     "name": "Возраст (только 18+)",
+     "items": [
+      {
+       "label": "Около 20",
+       "tags": "adult woman, 21 years old"
+      },
+      {
+       "label": "Около 25",
+       "tags": "adult woman, 25 years old"
+      },
+      {
+       "label": "Около 30",
+       "tags": "adult woman, 30 years old"
+      },
+      {
+       "label": "Около 35",
+       "tags": "adult woman, mature, 35 years old"
+      },
+      {
+       "label": "Около 40",
+       "tags": "adult woman, mature, 40 years old"
+      },
+      {
+       "label": "Около 45",
+       "tags": "adult woman, milf, 45 years old"
+      },
+      {
+       "label": "Около 50",
+       "tags": "adult woman, mature, 50 years old"
+      }
+     ]
+    },
+    {
+     "name": "Телосложение",
+     "items": [
+      {
+       "label": "Миниатюрная",
+       "tags": "petite, slim body"
+      },
+      {
+       "label": "Стройная",
+       "tags": "slim, slender body"
+      },
+      {
+       "label": "Атлетичная",
+       "tags": "athletic body, toned muscles, fit"
+      },
+      {
+       "label": "Подтянутая",
+       "tags": "toned body"
+      },
+      {
+       "label": "Песочные часы",
+       "tags": "hourglass figure, wide hips, narrow waist"
+      },
+      {
+       "label": "Пышная",
+       "tags": "curvy, voluptuous"
+      },
+      {
+       "label": "Плюс-сайз",
+       "tags": "plus size, bbw, soft body"
+      },
+      {
+       "label": "Мускулистая",
+       "tags": "muscular woman, abs"
+      },
+      {
+       "label": "Грушевидная",
+       "tags": "pear shaped body"
+      },
+      {
+       "label": "Модельная",
+       "tags": "tall slender model body, long legs"
+      }
+     ]
+    },
+    {
+     "name": "Грудь",
+     "items": [
+      {
+       "label": "Маленькая",
+       "tags": "small breasts, flat chest"
+      },
+      {
+       "label": "Средняя",
+       "tags": "medium breasts"
+      },
+      {
+       "label": "Большая",
+       "tags": "large breasts"
+      },
+      {
+       "label": "Огромная",
+       "tags": "huge breasts"
+      },
+      {
+       "label": "Натуральная",
+       "tags": "natural breasts"
+      },
+      {
+       "label": "Упругая",
+       "tags": "perky breasts"
+      }
+     ]
+    },
+    {
+     "name": "Бёдра и ягодицы",
+     "items": [
+      {
+       "label": "Узкие бёдра",
+       "tags": "narrow hips"
+      },
+      {
+       "label": "Широкие бёдра",
+       "tags": "wide hips, thick thighs"
+      },
+      {
+       "label": "Округлые ягодицы",
+       "tags": "round ass"
+      },
+      {
+       "label": "Упругие ягодицы",
+       "tags": "firm toned ass"
+      },
+      {
+       "label": "Большие ягодицы",
+       "tags": "big ass"
+      }
+     ]
+    },
+    {
+     "name": "Цвет волос",
+     "items": [
+      {
+       "label": "Блонд",
+       "tags": "blonde hair"
+      },
+      {
+       "label": "Платиновый блонд",
+       "tags": "platinum blonde hair"
+      },
+      {
+       "label": "Брюнетка",
+       "tags": "brunette, dark brown hair"
+      },
+      {
+       "label": "Чёрные",
+       "tags": "black hair"
+      },
+      {
+       "label": "Рыжие",
+       "tags": "red hair, ginger"
+      },
+      {
+       "label": "Каштановые",
+       "tags": "chestnut brown hair"
+      },
+      {
+       "label": "Русые",
+       "tags": "light brown hair"
+      },
+      {
+       "label": "Пепельные",
+       "tags": "ash grey hair"
+      },
+      {
+       "label": "Розовые",
+       "tags": "pink hair"
+      },
+      {
+       "label": "Голубые",
+       "tags": "blue hair"
+      },
+      {
+       "label": "Белые",
+       "tags": "white hair"
+      },
+      {
+       "label": "Омбре",
+       "tags": "ombre dyed hair"
+      }
+     ]
+    },
+    {
+     "name": "Причёска",
+     "items": [
+      {
+       "label": "Длинные прямые",
+       "tags": "long straight hair"
+      },
+      {
+       "label": "Длинные волнистые",
+       "tags": "long wavy hair"
+      },
+      {
+       "label": "Кудрявые",
+       "tags": "curly hair"
+      },
+      {
+       "label": "Каре",
+       "tags": "bob cut"
+      },
+      {
+       "label": "Короткая стрижка",
+       "tags": "short pixie cut"
+      },
+      {
+       "label": "Хвост",
+       "tags": "ponytail"
+      },
+      {
+       "label": "Высокий хвост",
+       "tags": "high ponytail"
+      },
+      {
+       "label": "Две косы",
+       "tags": "twin braids"
+      },
+      {
+       "label": "Коса",
+       "tags": "single braid"
+      },
+      {
+       "label": "Пучок",
+       "tags": "hair bun"
+      },
+      {
+       "label": "Растрёпанные",
+       "tags": "messy hair"
+      },
+      {
+       "label": "Чёлка",
+       "tags": "bangs"
+      },
+      {
+       "label": "Мокрые волосы",
+       "tags": "wet hair"
+      }
+     ]
+    },
+    {
+     "name": "Глаза",
+     "items": [
+      {
+       "label": "Карие",
+       "tags": "brown eyes"
+      },
+      {
+       "label": "Зелёные",
+       "tags": "green eyes"
+      },
+      {
+       "label": "Голубые",
+       "tags": "blue eyes"
+      },
+      {
+       "label": "Серые",
+       "tags": "grey eyes"
+      },
+      {
+       "label": "Янтарные",
+       "tags": "hazel amber eyes"
+      },
+      {
+       "label": "Тёмные",
+       "tags": "dark eyes"
+      }
+     ]
+    },
+    {
+     "name": "Кожа",
+     "items": [
+      {
+       "label": "Очень светлая",
+       "tags": "pale skin"
+      },
+      {
+       "label": "Светлая",
+       "tags": "fair skin"
+      },
+      {
+       "label": "Загорелая",
+       "tags": "tanned skin, tan lines"
+      },
+      {
+       "label": "Оливковая",
+       "tags": "olive skin"
+      },
+      {
+       "label": "Смуглая",
+       "tags": "brown skin"
+      },
+      {
+       "label": "Тёмная",
+       "tags": "dark skin"
+      },
+      {
+       "label": "Веснушки",
+       "tags": "freckles"
+      },
+      {
+       "label": "Блестящая от масла",
+       "tags": "oiled shiny skin"
+      },
+      {
+       "label": "Румянец",
+       "tags": "blushing cheeks"
+      }
+     ]
+    },
+    {
+     "name": "Тип внешности",
+     "items": [
+      {
+       "label": "Европейка",
+       "tags": "european woman"
+      },
+      {
+       "label": "Славянка",
+       "tags": "slavic woman"
+      },
+      {
+       "label": "Скандинавка",
+       "tags": "nordic woman"
+      },
+      {
+       "label": "Латиночка",
+       "tags": "latina woman"
+      },
+      {
+       "label": "Азиатка",
+       "tags": "east asian woman"
+      },
+      {
+       "label": "Японка",
+       "tags": "japanese woman"
+      },
+      {
+       "label": "Кореянка",
+       "tags": "korean woman"
+      },
+      {
+       "label": "Индианка",
+       "tags": "indian woman"
+      },
+      {
+       "label": "Арабка",
+       "tags": "middle eastern woman"
+      },
+      {
+       "label": "Африканка",
+       "tags": "african woman"
+      },
+      {
+       "label": "Смешанная",
+       "tags": "mixed race woman"
+      },
+      {
+       "label": "Бразильянка",
+       "tags": "brazilian woman"
+      }
+     ]
+    },
+    {
+     "name": "Детали",
+     "items": [
+      {
+       "label": "Татуировки",
+       "tags": "tattoos"
+      },
+      {
+       "label": "Тату на рукавах",
+       "tags": "sleeve tattoo"
+      },
+      {
+       "label": "Пирсинг",
+       "tags": "piercings"
+      },
+      {
+       "label": "Пирсинг в пупке",
+       "tags": "navel piercing"
+      },
+      {
+       "label": "Родинки",
+       "tags": "beauty marks, moles"
+      },
+      {
+       "label": "Очки",
+       "tags": "glasses"
+      },
+      {
+       "label": "Макияж",
+       "tags": "makeup, lipstick"
+      },
+      {
+       "label": "Яркая помада",
+       "tags": "red lipstick"
+      },
+      {
+       "label": "Смоки-айс",
+       "tags": "smokey eyes"
+      },
+      {
+       "label": "Длинные ногти",
+       "tags": "long nails, manicure"
+      },
+      {
+       "label": "Длинные ресницы",
+       "tags": "long eyelashes"
+      },
+      {
+       "label": "Ямочки",
+       "tags": "dimples"
+      }
+     ]
+    }
+   ],
+   "select": "group"
+  },
+  {
+   "id": "outfit",
+   "name": "Одежда",
+   "groups": [
+    {
+     "name": "Бельё",
+     "items": [
+      {
+       "label": "Кружевное бельё",
+       "tags": "lace lingerie"
+      },
+      {
+       "label": "Чёрное бельё",
+       "tags": "black lingerie"
+      },
+      {
+       "label": "Красное бельё",
+       "tags": "red lingerie"
+      },
+      {
+       "label": "Белое бельё",
+       "tags": "white lingerie"
+      },
+      {
+       "label": "Бюстгальтер",
+       "tags": "bra"
+      },
+      {
+       "label": "Спортивный бра",
+       "tags": "sports bra"
+      },
+      {
+       "label": "Стринги",
+       "tags": "thong"
+      },
+      {
+       "label": "Трусики",
+       "tags": "panties"
+      },
+      {
+       "label": "Боди",
+       "tags": "bodysuit"
+      },
+      {
+       "label": "Бэби-долл",
+       "tags": "babydoll nightie"
+      },
+      {
+       "label": "Корсет",
+       "tags": "corset"
+      },
+      {
+       "label": "Пояс для чулок",
+       "tags": "garter belt"
+      },
+      {
+       "label": "Сетчатое бельё",
+       "tags": "fishnet lingerie"
+      },
+      {
+       "label": "Прозрачный пеньюар",
+       "tags": "sheer negligee"
+      },
+      {
+       "label": "Бикини",
+       "tags": "bikini"
+      },
+      {
+       "label": "Микро-бикини",
+       "tags": "micro bikini"
+      },
+      {
+       "label": "Монокини",
+       "tags": "monokini"
+      },
+      {
+       "label": "Шёлковый халат",
+       "tags": "silk robe"
+      },
+      {
+       "label": "Комбинация",
+       "tags": "slip dress"
+      }
+     ]
+    },
+    {
+     "name": "Платья",
+     "items": [
+      {
+       "label": "Коктейльное",
+       "tags": "cocktail dress"
+      },
+      {
+       "label": "Вечернее",
+       "tags": "evening gown"
+      },
+      {
+       "label": "Мини-платье",
+       "tags": "mini dress"
+      },
+      {
+       "label": "Обтягивающее",
+       "tags": "tight dress, bodycon"
+      },
+      {
+       "label": "Облегающее красное",
+       "tags": "red dress"
+      },
+      {
+       "label": "Маленькое чёрное",
+       "tags": "little black dress"
+      },
+      {
+       "label": "Летнее",
+       "tags": "sundress"
+      },
+      {
+       "label": "Свадебное",
+       "tags": "wedding dress"
+      },
+      {
+       "label": "С глубоким вырезом",
+       "tags": "plunging neckline dress"
+      },
+      {
+       "label": "С разрезом",
+       "tags": "dress with high slit"
+      },
+      {
+       "label": "Прозрачное",
+       "tags": "see-through dress"
+      },
+      {
+       "label": "Латексное",
+       "tags": "latex dress"
+      },
+      {
+       "label": "Футляр",
+       "tags": "pencil dress"
+      }
+     ]
+    },
+    {
+     "name": "Верх",
+     "items": [
+      {
+       "label": "Топ",
+       "tags": "crop top"
+      },
+      {
+       "label": "Майка",
+       "tags": "tank top"
+      },
+      {
+       "label": "Футболка",
+       "tags": "t-shirt"
+      },
+      {
+       "label": "Мокрая футболка",
+       "tags": "wet t-shirt"
+      },
+      {
+       "label": "Рубашка",
+       "tags": "white button-up shirt"
+      },
+      {
+       "label": "Расстёгнутая рубашка",
+       "tags": "open shirt"
+      },
+      {
+       "label": "Блузка",
+       "tags": "blouse"
+      },
+      {
+       "label": "Свитер",
+       "tags": "sweater"
+      },
+      {
+       "label": "Оверсайз худи",
+       "tags": "oversized hoodie"
+      },
+      {
+       "label": "Кожаная куртка",
+       "tags": "leather jacket"
+      },
+      {
+       "label": "Топ-бандо",
+       "tags": "bandeau top"
+      },
+      {
+       "label": "Корсетный топ",
+       "tags": "corset top"
+      },
+      {
+       "label": "Мужская рубашка",
+       "tags": "wearing mens shirt only"
+      }
+     ]
+    },
+    {
+     "name": "Низ",
+     "items": [
+      {
+       "label": "Мини-юбка",
+       "tags": "miniskirt"
+      },
+      {
+       "label": "Карандаш-юбка",
+       "tags": "pencil skirt"
+      },
+      {
+       "label": "Короткие шорты",
+       "tags": "short shorts"
+      },
+      {
+       "label": "Джинсовые шорты",
+       "tags": "denim shorts"
+      },
+      {
+       "label": "Джинсы",
+       "tags": "jeans"
+      },
+      {
+       "label": "Обтягивающие легинсы",
+       "tags": "tight leggings"
+      },
+      {
+       "label": "Кожаные штаны",
+       "tags": "leather pants"
+      },
+      {
+       "label": "Плиссированная юбка",
+       "tags": "pleated skirt"
+      },
+      {
+       "label": "Спортивные шорты",
+       "tags": "gym shorts"
+      },
+      {
+       "label": "Велосипедки",
+       "tags": "bike shorts"
+      }
+     ]
+    },
+    {
+     "name": "Костюмы и роли",
+     "items": [
+      {
+       "label": "Секретарша",
+       "tags": "secretary outfit, office lady"
+      },
+      {
+       "label": "Медсестра",
+       "tags": "nurse outfit"
+      },
+      {
+       "label": "Горничная",
+       "tags": "maid outfit"
+      },
+      {
+       "label": "Учительница (взрослая)",
+       "tags": "female teacher outfit, adult teacher"
+      },
+      {
+       "label": "Офицер полиции",
+       "tags": "police woman uniform"
+      },
+      {
+       "label": "Стюардесса",
+       "tags": "flight attendant uniform"
+      },
+      {
+       "label": "Деловой костюм",
+       "tags": "business suit"
+      },
+      {
+       "label": "Спортивная форма",
+       "tags": "athletic wear"
+      },
+      {
+       "label": "Чирлидер (взрослая)",
+       "tags": "cheerleader outfit, adult"
+      },
+      {
+       "label": "Костюм кошки",
+       "tags": "cat ears, cat costume"
+      },
+      {
+       "label": "Банни",
+       "tags": "bunny suit, bunny ears"
+      },
+      {
+       "label": "Ведьма",
+       "tags": "witch costume"
+      },
+      {
+       "label": "Ангел",
+       "tags": "angel costume"
+      },
+      {
+       "label": "Дьяволица",
+       "tags": "devil costume"
+      },
+      {
+       "label": "Принцесса",
+       "tags": "princess dress"
+      },
+      {
+       "label": "Воительница",
+       "tags": "warrior outfit"
+      },
+      {
+       "label": "Кимоно",
+       "tags": "kimono"
+      },
+      {
+       "label": "Ципао",
+       "tags": "qipao"
+      },
+      {
+       "label": "Китель военный",
+       "tags": "military uniform"
+      },
+      {
+       "label": "Косплей",
+       "tags": "cosplay"
+      },
+      {
+       "label": "Йога-наряд",
+       "tags": "yoga outfit"
+      },
+      {
+       "label": "Горнолыжный костюм",
+       "tags": "ski outfit"
+      }
+     ]
+    },
+    {
+     "name": "Обувь и чулки",
+     "items": [
+      {
+       "label": "Каблуки",
+       "tags": "high heels"
+      },
+      {
+       "label": "Шпильки",
+       "tags": "stiletto heels"
+      },
+      {
+       "label": "Сапоги до бедра",
+       "tags": "thigh high boots"
+      },
+      {
+       "label": "Ботильоны",
+       "tags": "ankle boots"
+      },
+      {
+       "label": "Кроссовки",
+       "tags": "sneakers"
+      },
+      {
+       "label": "Чулки",
+       "tags": "stockings"
+      },
+      {
+       "label": "Чулки с подвязками",
+       "tags": "garter stockings"
+      },
+      {
+       "label": "Чулки в сетку",
+       "tags": "fishnet stockings"
+      },
+      {
+       "label": "Гольфы",
+       "tags": "thigh high socks"
+      },
+      {
+       "label": "Колготки",
+       "tags": "pantyhose"
+      },
+      {
+       "label": "Рваные колготки",
+       "tags": "ripped tights"
+      },
+      {
+       "label": "Босиком",
+       "tags": "barefoot"
+      }
+     ]
+    },
+    {
+     "name": "Аксессуары",
+     "items": [
+      {
+       "label": "Чокер",
+       "tags": "choker"
+      },
+      {
+       "label": "Ошейник",
+       "tags": "collar"
+      },
+      {
+       "label": "Перчатки",
+       "tags": "long gloves"
+      },
+      {
+       "label": "Кожаные перчатки",
+       "tags": "leather gloves"
+      },
+      {
+       "label": "Шляпа",
+       "tags": "hat"
+      },
+      {
+       "label": "Ковбойская шляпа",
+       "tags": "cowboy hat"
+      },
+      {
+       "label": "Украшения",
+       "tags": "jewelry, necklace, earrings"
+      },
+      {
+       "label": "Браслеты",
+       "tags": "bracelets"
+      },
+      {
+       "label": "Пояс",
+       "tags": "belt"
+      },
+      {
+       "label": "Маска",
+       "tags": "mask"
+      },
+      {
+       "label": "Повязка на глаза",
+       "tags": "blindfold"
+      },
+      {
+       "label": "Галстук",
+       "tags": "necktie"
+      },
+      {
+       "label": "Фартук",
+       "tags": "apron"
+      },
+      {
+       "label": "Очки",
+       "tags": "glasses"
+      }
+     ]
+    },
+    {
+     "name": "Материалы",
+     "items": [
+      {
+       "label": "Латекс",
+       "tags": "latex"
+      },
+      {
+       "label": "Кожа",
+       "tags": "leather"
+      },
+      {
+       "label": "Шёлк",
+       "tags": "silk"
+      },
+      {
+       "label": "Атлас",
+       "tags": "satin"
+      },
+      {
+       "label": "Кружево",
+       "tags": "lace"
+      },
+      {
+       "label": "Сетка",
+       "tags": "mesh"
+      },
+      {
+       "label": "Прозрачная ткань",
+       "tags": "sheer fabric"
+      },
+      {
+       "label": "Блёстки",
+       "tags": "sequins"
+      },
+      {
+       "label": "Мокрая ткань",
+       "tags": "wet clothes"
+      },
+      {
+       "label": "Бархат",
+       "tags": "velvet"
+      }
+     ]
+    },
+    {
+     "name": "Степень одежды",
+     "items": [
+      {
+       "label": "Полностью одета",
+       "tags": "fully clothed"
+      },
+      {
+       "label": "Слегка расстёгнута",
+       "tags": "partially unbuttoned"
+      },
+      {
+       "label": "Приспущенная одежда",
+       "tags": "clothes pulled aside"
+      },
+      {
+       "label": "Полуодета",
+       "tags": "half dressed"
+      },
+      {
+       "label": "Топлес",
+       "tags": "topless"
+      },
+      {
+       "label": "В одном белье",
+       "tags": "only underwear"
+      },
+      {
+       "label": "Обнажённая",
+       "tags": "nude"
+      },
+      {
+       "label": "Только чулки",
+       "tags": "only stockings"
+      },
+      {
+       "label": "Только каблуки",
+       "tags": "only high heels"
+      },
+      {
+       "label": "Простыня",
+       "tags": "covered by sheet"
+      }
+     ]
+    }
+   ],
+   "select": "multi"
+  },
+  {
+   "id": "pose",
+   "name": "Позы",
+   "groups": [
+    {
+     "name": "Стоя",
+     "items": [
+      {
+       "label": "Прямо",
+       "tags": "standing, facing viewer"
+      },
+      {
+       "label": "Руки на бёдрах",
+       "tags": "standing, hands on hips"
+      },
+      {
+       "label": "Опираясь на стену",
+       "tags": "leaning against wall"
+      },
+      {
+       "label": "Над камерой, спиной",
+       "tags": "standing, from behind, looking back over shoulder"
+      },
+      {
+       "label": "Нога вверх",
+       "tags": "standing, one leg raised"
+      },
+      {
+       "label": "В движении",
+       "tags": "walking pose"
+      },
+      {
+       "label": "Руки за головой",
+       "tags": "hands behind head"
+      },
+      {
+       "label": "Потягивается",
+       "tags": "stretching"
+      },
+      {
+       "label": "Позирует у зеркала",
+       "tags": "posing in front of mirror, selfie"
+      },
+      {
+       "label": "Наклонилась вперёд",
+       "tags": "bent over, leaning forward"
+      },
+      {
+       "label": "Касается волос",
+       "tags": "touching hair"
+      },
+      {
+       "label": "Контрапост",
+       "tags": "contrapposto"
+      }
+     ]
+    },
+    {
+     "name": "Сидя",
+     "items": [
+      {
+       "label": "На стуле",
+       "tags": "sitting on chair"
+      },
+      {
+       "label": "На краю кровати",
+       "tags": "sitting on edge of bed"
+      },
+      {
+       "label": "На диване",
+       "tags": "sitting on couch"
+      },
+      {
+       "label": "Нога на ногу",
+       "tags": "sitting, crossed legs"
+      },
+      {
+       "label": "Ноги расставлены",
+       "tags": "sitting, legs spread"
+      },
+      {
+       "label": "Верхом на стуле",
+       "tags": "sitting backwards on chair"
+      },
+      {
+       "label": "По-турецки",
+       "tags": "sitting cross-legged"
+      },
+      {
+       "label": "На подоконнике",
+       "tags": "sitting on windowsill"
+      },
+      {
+       "label": "На столе",
+       "tags": "sitting on table"
+      },
+      {
+       "label": "Колени к груди",
+       "tags": "sitting, knees to chest"
+      },
+      {
+       "label": "На полу",
+       "tags": "sitting on floor"
+      },
+      {
+       "label": "Сидя на пятках",
+       "tags": "seiza, sitting on heels"
+      }
+     ]
+    },
+    {
+     "name": "Лёжа",
+     "items": [
+      {
+       "label": "На спине",
+       "tags": "lying on back"
+      },
+      {
+       "label": "На животе",
+       "tags": "lying on stomach"
+      },
+      {
+       "label": "На боку",
+       "tags": "lying on side"
+      },
+      {
+       "label": "На кровати",
+       "tags": "lying on bed"
+      },
+      {
+       "label": "На диване",
+       "tags": "lying on couch"
+      },
+      {
+       "label": "Растянувшись",
+       "tags": "reclining"
+      },
+      {
+       "label": "Раскинув руки",
+       "tags": "lying with arms spread"
+      },
+      {
+       "label": "Ноги вверх",
+       "tags": "lying, legs up"
+      },
+      {
+       "label": "Выгнув спину",
+       "tags": "arched back, lying"
+      },
+      {
+       "label": "Подложив руку под голову",
+       "tags": "lying, hand under head"
+      },
+      {
+       "label": "В ванной",
+       "tags": "lying in bathtub"
+      },
+      {
+       "label": "На траве",
+       "tags": "lying on grass"
+      }
+     ]
+    },
+    {
+     "name": "На коленях и четвереньках",
+     "items": [
+      {
+       "label": "На коленях",
+       "tags": "kneeling"
+      },
+      {
+       "label": "На коленях, смотрит вверх",
+       "tags": "kneeling, looking up at viewer"
+      },
+      {
+       "label": "На четвереньках",
+       "tags": "on all fours"
+      },
+      {
+       "label": "Кошка",
+       "tags": "cat pose, all fours, arched back"
+      },
+      {
+       "label": "Вид сзади на четвереньках",
+       "tags": "all fours, from behind"
+      },
+      {
+       "label": "На коленях на кровати",
+       "tags": "kneeling on bed"
+      },
+      {
+       "label": "Присела",
+       "tags": "squatting"
+      },
+      {
+       "label": "Глубокий присед",
+       "tags": "deep squat"
+      },
+      {
+       "label": "На одном колене",
+       "tags": "one knee up"
+      }
+     ]
+    },
+    {
+     "name": "Вид и подача",
+     "items": [
+      {
+       "label": "Спиной через плечо",
+       "tags": "looking back over shoulder"
+      },
+      {
+       "label": "Вид сверху",
+       "tags": "pov from above"
+      },
+      {
+       "label": "Прячется",
+       "tags": "covering with hands"
+      },
+      {
+       "label": "Игриво",
+       "tags": "playful pose"
+      },
+      {
+       "label": "Соблазнительно",
+       "tags": "seductive pose"
+      },
+      {
+       "label": "Властно",
+       "tags": "dominant pose"
+      },
+      {
+       "label": "Застенчиво",
+       "tags": "shy pose"
+      },
+      {
+       "label": "Прикусывает губу",
+       "tags": "biting lip"
+      }
+     ]
+    },
+    {
+     "name": "Парные позы",
+     "items": [
+      {
+       "label": "Миссионерская",
+       "tags": "missionary position"
+      },
+      {
+       "label": "Сверху",
+       "tags": "cowgirl position"
+      },
+      {
+       "label": "Обратная наездница",
+       "tags": "reverse cowgirl position"
+      },
+      {
+       "label": "Догги-стайл",
+       "tags": "doggy style, from behind"
+      },
+      {
+       "label": "Ложки",
+       "tags": "spooning"
+      },
+      {
+       "label": "На боку",
+       "tags": "side by side, lying together"
+      },
+      {
+       "label": "Стоя",
+       "tags": "standing sex position"
+      },
+      {
+       "label": "Сидя лицом к лицу",
+       "tags": "face to face, sitting on lap"
+      },
+      {
+       "label": "У стены",
+       "tags": "against wall"
+      },
+      {
+       "label": "На столе",
+       "tags": "on table"
+      },
+      {
+       "label": "На краю кровати",
+       "tags": "on edge of bed"
+      },
+      {
+       "label": "Объятия",
+       "tags": "embracing"
+      },
+      {
+       "label": "Страстный поцелуй",
+       "tags": "passionate kiss, embrace"
+      }
+     ]
+    }
+   ],
+   "select": "category"
+  },
+  {
+   "id": "action",
+   "name": "Действия",
+   "groups": [
+    {
+     "name": "Романтика и флирт",
+     "items": [
+      {
+       "label": "Поцелуй",
+       "tags": "kissing"
+      },
+      {
+       "label": "Поцелуй в шею",
+       "tags": "neck kissing"
+      },
+      {
+       "label": "Объятия",
+       "tags": "hugging"
+      },
+      {
+       "label": "Танец",
+       "tags": "dancing"
+      },
+      {
+       "label": "Танец на коленях",
+       "tags": "lap dance"
+      },
+      {
+       "label": "Стриптиз",
+       "tags": "striptease"
+      },
+      {
+       "label": "Раздевается",
+       "tags": "undressing"
+      },
+      {
+       "label": "Снимает бельё",
+       "tags": "taking off lingerie"
+      },
+      {
+       "label": "Подмигивает",
+       "tags": "winking"
+      },
+      {
+       "label": "Воздушный поцелуй",
+       "tags": "blowing kiss"
+      },
+      {
+       "label": "Флирт",
+       "tags": "flirting"
+      },
+      {
+       "label": "Шепчет на ухо",
+       "tags": "whispering in ear"
+      },
+      {
+       "label": "Прикосновения",
+       "tags": "touching"
+      },
+      {
+       "label": "Ласкает",
+       "tags": "caressing"
+      }
+     ]
+    },
+    {
+     "name": "Повседневные",
+     "items": [
+      {
+       "label": "Готовит",
+       "tags": "cooking"
+      },
+      {
+       "label": "Читает",
+       "tags": "reading book"
+      },
+      {
+       "label": "Пьёт кофе",
+       "tags": "drinking coffee"
+      },
+      {
+       "label": "Пьёт вино",
+       "tags": "drinking wine"
+      },
+      {
+       "label": "Принимает душ",
+       "tags": "taking a shower"
+      },
+      {
+       "label": "Принимает ванну",
+       "tags": "taking a bath"
+      },
+      {
+       "label": "Чистит зубы",
+       "tags": "brushing teeth"
+      },
+      {
+       "label": "Красится",
+       "tags": "applying makeup"
+      },
+      {
+       "label": "Переодевается",
+       "tags": "changing clothes"
+      },
+      {
+       "label": "Просыпается",
+       "tags": "waking up"
+      },
+      {
+       "label": "Потягивается",
+       "tags": "stretching"
+      },
+      {
+       "label": "Танцует",
+       "tags": "dancing"
+      },
+      {
+       "label": "Смеётся",
+       "tags": "laughing"
+      },
+      {
+       "label": "Печатает за ноутбуком",
+       "tags": "working on laptop"
+      },
+      {
+       "label": "Делает селфи",
+       "tags": "taking selfie"
+      },
+      {
+       "label": "Занимается йогой",
+       "tags": "doing yoga"
+      },
+      {
+       "label": "Тренируется",
+       "tags": "working out"
+      },
+      {
+       "label": "Плавает",
+       "tags": "swimming"
+      },
+      {
+       "label": "Загорает",
+       "tags": "sunbathing"
+      },
+      {
+       "label": "Моет машину",
+       "tags": "washing car"
+      }
+     ]
+    },
+    {
+     "name": "Массаж и уход",
+     "items": [
+      {
+       "label": "Массаж",
+       "tags": "massage"
+      },
+      {
+       "label": "Масляный массаж",
+       "tags": "oil massage"
+      },
+      {
+       "label": "Массаж спины",
+       "tags": "back massage"
+      },
+      {
+       "label": "Втирает крем",
+       "tags": "applying lotion"
+      },
+      {
+       "label": "Втирает масло",
+       "tags": "applying oil on body"
+      },
+      {
+       "label": "Моет волосы",
+       "tags": "washing hair"
+      },
+      {
+       "label": "Вытирается полотенцем",
+       "tags": "drying with towel"
+      },
+      {
+       "label": "Брызги воды",
+       "tags": "splashing water"
+      },
+      {
+       "label": "Пена",
+       "tags": "covered in foam"
+      }
+     ]
+    },
+    {
+     "name": "Мимика и взгляд",
+     "items": [
+      {
+       "label": "Смотрит в камеру",
+       "tags": "looking at viewer"
+      },
+      {
+       "label": "Смотрит в сторону",
+       "tags": "looking away"
+      },
+      {
+       "label": "Закрытые глаза",
+       "tags": "closed eyes"
+      },
+      {
+       "label": "Улыбка",
+       "tags": "smile"
+      },
+      {
+       "label": "Лукавая улыбка",
+       "tags": "smirk"
+      },
+      {
+       "label": "Томный взгляд",
+       "tags": "bedroom eyes"
+      },
+      {
+       "label": "Удивление",
+       "tags": "surprised"
+      },
+      {
+       "label": "Открытый рот",
+       "tags": "open mouth"
+      },
+      {
+       "label": "Облизывает губы",
+       "tags": "licking lips"
+      },
+      {
+       "label": "Высунутый язык",
+       "tags": "tongue out"
+      },
+      {
+       "label": "Подмигивает",
+       "tags": "one eye closed"
+      },
+      {
+       "label": "Прикусила губу",
+       "tags": "biting lip"
+      },
+      {
+       "label": "Румянец",
+       "tags": "blush"
+      },
+      {
+       "label": "Страсть",
+       "tags": "passionate expression"
+      },
+      {
+       "label": "Нежность",
+       "tags": "gentle expression"
+      }
+     ]
+    },
+    {
+     "name": "Интимные",
+     "items": [
+      {
+       "label": "Ласки",
+       "tags": "foreplay"
+      },
+      {
+       "label": "Страсть",
+       "tags": "passionate sex"
+      },
+      {
+       "label": "Нежный секс",
+       "tags": "gentle sex"
+      },
+      {
+       "label": "Соло",
+       "tags": "solo, masturbation"
+      },
+      {
+       "label": "Оральные ласки",
+       "tags": "oral"
+      },
+      {
+       "label": "Взаимные ласки",
+       "tags": "mutual"
+      },
+      {
+       "label": "Соло с игрушкой",
+       "tags": "using toy"
+      },
+      {
+       "label": "Кульминация",
+       "tags": "climax, orgasm face"
+      },
+      {
+       "label": "Послевкусие",
+       "tags": "afterglow, lying in bed, sweaty"
+      },
+      {
+       "label": "Групповая сцена",
+       "tags": "group, multiple partners"
+      },
+      {
+       "label": "Вдвоём",
+       "tags": "couple, 1girl 1boy"
+      },
+      {
+       "label": "Две девушки",
+       "tags": "2girls, lesbian"
+      }
+     ]
+    }
+   ],
+   "select": "multi"
+  },
+  {
+   "id": "scene",
+   "name": "Сцены и место",
+   "groups": [
+    {
+     "name": "Дом",
+     "items": [
+      {
+       "label": "Спальня",
+       "tags": "bedroom, bed with white sheets"
+      },
+      {
+       "label": "Роскошная спальня",
+       "tags": "luxury bedroom"
+      },
+      {
+       "label": "Гостиная",
+       "tags": "living room"
+      },
+      {
+       "label": "Диван",
+       "tags": "couch, living room"
+      },
+      {
+       "label": "Кухня",
+       "tags": "kitchen"
+      },
+      {
+       "label": "Ванная",
+       "tags": "bathroom"
+      },
+      {
+       "label": "Душ",
+       "tags": "shower, glass door, steam"
+      },
+      {
+       "label": "Ванна с пеной",
+       "tags": "bathtub with bubbles"
+      },
+      {
+       "label": "Джакузи",
+       "tags": "jacuzzi"
+      },
+      {
+       "label": "Балкон",
+       "tags": "balcony at night"
+      },
+      {
+       "label": "Прихожая",
+       "tags": "hallway"
+      },
+      {
+       "label": "Кабинет",
+       "tags": "home office"
+      },
+      {
+       "label": "Гардеробная",
+       "tags": "walk-in closet"
+      },
+      {
+       "label": "Мансарда",
+       "tags": "attic bedroom"
+      }
+     ]
+    },
+    {
+     "name": "Отель и город",
+     "items": [
+      {
+       "label": "Номер отеля",
+       "tags": "hotel room"
+      },
+      {
+       "label": "Люкс",
+       "tags": "luxury suite"
+      },
+      {
+       "label": "Крыша небоскрёба",
+       "tags": "rooftop, city night"
+      },
+      {
+       "label": "Лифт",
+       "tags": "elevator"
+      },
+      {
+       "label": "Бар",
+       "tags": "bar interior"
+      },
+      {
+       "label": "Ночной клуб",
+       "tags": "nightclub"
+      },
+      {
+       "label": "Ресторан",
+       "tags": "restaurant"
+      },
+      {
+       "label": "Кафе",
+       "tags": "cafe"
+      },
+      {
+       "label": "Улица ночью",
+       "tags": "city street at night"
+      },
+      {
+       "label": "Неоновые огни",
+       "tags": "neon lights"
+      },
+      {
+       "label": "Подземный паркинг",
+       "tags": "parking garage"
+      },
+      {
+       "label": "Библиотека",
+       "tags": "library"
+      },
+      {
+       "label": "Офис",
+       "tags": "office"
+      },
+      {
+       "label": "Кабинет шефа",
+       "tags": "executive office"
+      },
+      {
+       "label": "Спортзал",
+       "tags": "gym"
+      },
+      {
+       "label": "Раздевалка",
+       "tags": "locker room"
+      },
+      {
+       "label": "Сауна",
+       "tags": "sauna"
+      },
+      {
+       "label": "Бассейн",
+       "tags": "indoor pool"
+      },
+      {
+       "label": "Спа",
+       "tags": "spa"
+      }
+     ]
+    },
+    {
+     "name": "Природа",
+     "items": [
+      {
+       "label": "Пляж днём",
+       "tags": "beach, daylight"
+      },
+      {
+       "label": "Пляж на закате",
+       "tags": "beach at sunset"
+      },
+      {
+       "label": "Тропики",
+       "tags": "tropical, palm trees"
+      },
+      {
+       "label": "Бассейн виллы",
+       "tags": "villa pool"
+      },
+      {
+       "label": "Лес",
+       "tags": "forest"
+      },
+      {
+       "label": "Поляна",
+       "tags": "meadow, flowers"
+      },
+      {
+       "label": "Озеро",
+       "tags": "lake shore"
+      },
+      {
+       "label": "Горы",
+       "tags": "mountain background"
+      },
+      {
+       "label": "Водопад",
+       "tags": "waterfall"
+      },
+      {
+       "label": "Пустыня",
+       "tags": "desert dunes"
+      },
+      {
+       "label": "Поле",
+       "tags": "golden field"
+      },
+      {
+       "label": "Дождь",
+       "tags": "rain"
+      },
+      {
+       "label": "Снег",
+       "tags": "snow"
+      },
+      {
+       "label": "Палатка",
+       "tags": "tent, camping"
+      },
+      {
+       "label": "Горячий источник",
+       "tags": "hot spring"
+      }
+     ]
+    },
+    {
+     "name": "Транспорт и необычное",
+     "items": [
+      {
+       "label": "Яхта",
+       "tags": "yacht deck"
+      },
+      {
+       "label": "Лодка",
+       "tags": "boat"
+      },
+      {
+       "label": "Салон автомобиля",
+       "tags": "car interior"
+      },
+      {
+       "label": "Капот машины",
+       "tags": "sitting on car hood"
+      },
+      {
+       "label": "Самолёт",
+       "tags": "private jet interior"
+      },
+      {
+       "label": "Поезд",
+       "tags": "train compartment"
+      },
+      {
+       "label": "Мотоцикл",
+       "tags": "motorcycle"
+      },
+      {
+       "label": "Студия",
+       "tags": "photo studio"
+      },
+      {
+       "label": "Фотосессия",
+       "tags": "professional photoshoot"
+      },
+      {
+       "label": "Сцена театра",
+       "tags": "stage"
+      },
+      {
+       "label": "Мастерская художника",
+       "tags": "artist studio"
+      },
+      {
+       "label": "Замок",
+       "tags": "castle interior"
+      },
+      {
+       "label": "Дворец",
+       "tags": "palace"
+      },
+      {
+       "label": "Шатёр",
+       "tags": "tent, arabian night"
+      },
+      {
+       "label": "Крыша",
+       "tags": "rooftop"
+      }
+     ]
+    },
+    {
+     "name": "Время и настроение",
+     "items": [
+      {
+       "label": "Утро",
+       "tags": "morning light"
+      },
+      {
+       "label": "Полдень",
+       "tags": "midday sun"
+      },
+      {
+       "label": "Золотой час",
+       "tags": "golden hour"
+      },
+      {
+       "label": "Закат",
+       "tags": "sunset"
+      },
+      {
+       "label": "Сумерки",
+       "tags": "dusk, blue hour"
+      },
+      {
+       "label": "Ночь",
+       "tags": "night"
+      },
+      {
+       "label": "При свечах",
+       "tags": "candlelight, candles"
+      },
+      {
+       "label": "Камин",
+       "tags": "fireplace, warm light"
+      },
+      {
+       "label": "Романтика",
+       "tags": "romantic atmosphere"
+      },
+      {
+       "label": "Уют",
+       "tags": "cozy atmosphere"
+      },
+      {
+       "label": "Роскошь",
+       "tags": "luxury"
+      },
+      {
+       "label": "Грязный реализм",
+       "tags": "gritty, raw"
+      },
+      {
+       "label": "Мечтательно",
+       "tags": "dreamy atmosphere"
+      }
+     ]
+    }
+   ],
+   "select": "group"
+  },
+  {
+   "id": "camera",
+   "name": "Камера и стиль",
+   "groups": [
+    {
+     "name": "Ракурс",
+     "items": [
+      {
+       "label": "Портрет",
+       "tags": "portrait, close-up"
+      },
+      {
+       "label": "Крупно лицо",
+       "tags": "close-up face"
+      },
+      {
+       "label": "По пояс",
+       "tags": "upper body, cowboy shot"
+      },
+      {
+       "label": "В полный рост",
+       "tags": "full body"
+      },
+      {
+       "label": "Вид сзади",
+       "tags": "from behind"
+      },
+      {
+       "label": "Вид сбоку",
+       "tags": "from side"
+      },
+      {
+       "label": "Снизу",
+       "tags": "from below, low angle"
+      },
+      {
+       "label": "Сверху",
+       "tags": "from above, high angle"
+      },
+      {
+       "label": "От первого лица",
+       "tags": "pov"
+      },
+      {
+       "label": "Через плечо",
+       "tags": "over the shoulder shot"
+      },
+      {
+       "label": "Широкий кадр",
+       "tags": "wide shot"
+      },
+      {
+       "label": "Макро",
+       "tags": "macro shot"
+      },
+      {
+       "label": "Отражение в зеркале",
+       "tags": "mirror reflection"
+      },
+      {
+       "label": "Дутч-англ",
+       "tags": "dutch angle"
+      }
+     ]
+    },
+    {
+     "name": "Фото-стиль",
+     "items": [
+      {
+       "label": "Фотореализм",
+       "tags": "photorealistic, raw photo, 8k uhd"
+      },
+      {
+       "label": "Кинематографично",
+       "tags": "cinematic still, film grain"
+      },
+      {
+       "label": "Журнал",
+       "tags": "magazine cover, editorial photography"
+      },
+      {
+       "label": "Телефонное фото",
+       "tags": "amateur photo, smartphone photo"
+      },
+      {
+       "label": "Плёнка 35мм",
+       "tags": "35mm film photo, kodak portra"
+      },
+      {
+       "label": "Студийное",
+       "tags": "studio photography"
+      },
+      {
+       "label": "Уличный стиль",
+       "tags": "street photography"
+      },
+      {
+       "label": "Бутик-фото",
+       "tags": "boudoir photography"
+      },
+      {
+       "label": "Глянец",
+       "tags": "glamour photography"
+      },
+      {
+       "label": "Ретро 80-х",
+       "tags": "1980s vintage photo"
+      },
+      {
+       "label": "Чёрно-белое",
+       "tags": "black and white photo"
+      },
+      {
+       "label": "Polaroid",
+       "tags": "polaroid photo"
+      }
+     ]
+    },
+    {
+     "name": "Оптика",
+     "items": [
+      {
+       "label": "85 мм портрет",
+       "tags": "85mm lens, shallow depth of field"
+      },
+      {
+       "label": "50 мм",
+       "tags": "50mm lens"
+      },
+      {
+       "label": "35 мм",
+       "tags": "35mm lens"
+      },
+      {
+       "label": "Боке",
+       "tags": "bokeh"
+      },
+      {
+       "label": "Широкий угол",
+       "tags": "wide angle lens"
+      },
+      {
+       "label": "Телеобъектив",
+       "tags": "telephoto lens"
+      },
+      {
+       "label": "Резкий фокус",
+       "tags": "sharp focus"
+      },
+      {
+       "label": "Мягкий фокус",
+       "tags": "soft focus"
+      }
+     ]
+    },
+    {
+     "name": "Освещение",
+     "items": [
+      {
+       "label": "Мягкий свет",
+       "tags": "soft lighting"
+      },
+      {
+       "label": "Контровой",
+       "tags": "rim light, backlighting"
+      },
+      {
+       "label": "Студийный",
+       "tags": "studio lighting"
+      },
+      {
+       "label": "Драматичный",
+       "tags": "dramatic lighting, chiaroscuro"
+      },
+      {
+       "label": "Тёплый",
+       "tags": "warm lighting"
+      },
+      {
+       "label": "Холодный",
+       "tags": "cool lighting"
+      },
+      {
+       "label": "Неон",
+       "tags": "neon lighting, pink and blue"
+      },
+      {
+       "label": "Окно",
+       "tags": "window light"
+      },
+      {
+       "label": "Солнечные лучи",
+       "tags": "sunbeams, volumetric light"
+      },
+      {
+       "label": "Свечи",
+       "tags": "candle light"
+      },
+      {
+       "label": "Силуэт",
+       "tags": "silhouette"
+      },
+      {
+       "label": "Лунный свет",
+       "tags": "moonlight"
+      }
+     ]
+    }
+   ],
+   "select": "group"
+  }
+ ]
+}
