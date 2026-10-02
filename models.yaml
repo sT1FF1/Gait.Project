@@ -1,5 +1,7 @@
 # Каждая запись — одна модель в выпадающем списке.
 # backend: diffusers (локально) | a1111 (удалённый WebUI/Forge API) | comfyui
+# defaults.prompt_prefix / prompt_suffix / negative_prompt добавляются к каждому запросу автоматически
+# (например, служебные теги качества, которые требуют Pony/Illustrious-подобные чекпоинты).
 models:
   - id: sdxl-local
     name: "SDXL checkpoint (local)"
@@ -7,7 +9,13 @@ models:
     # путь к .safetensors (например, скачанный с Civitai) или id репозитория на Hugging Face
     path: models/my-sdxl-checkpoint.safetensors
     pipeline: sdxl          # sdxl | sd15
-    defaults: {steps: 28, guidance: 6.0, width: 832, height: 1216}
+    defaults:
+      steps: 28
+      guidance: 6.0
+      width: 832
+      height: 1216
+      prompt_prefix: "score_9, score_8_up, score_7_up,"   # пример для Pony-based; убери, если не нужно
+      negative_prompt: "score_4, score_3, blurry, lowres, bad anatomy, extra fingers, watermark, text"
 
   - id: sd15-local
     name: "SD 1.5 checkpoint (local)"

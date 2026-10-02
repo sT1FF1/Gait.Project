@@ -49,9 +49,11 @@ def generate(req: GenRequest):
     if req.model not in _providers:
         _providers[req.model] = BACKENDS[cfg["backend"]](cfg)
     d = cfg.get("defaults", {})
+    prompt = " ".join(x for x in (d.get("prompt_prefix", ""), req.prompt, d.get("prompt_suffix", "")) if x)
+    negative = ", ".join(x for x in (d.get("negative_prompt", ""), req.negative_prompt) if x)
     params = GenParams(
-        prompt=req.prompt,
-        negative_prompt=req.negative_prompt,
+        prompt=prompt,
+        negative_prompt=negative,
         steps=req.steps or d.get("steps", 28),
         guidance=req.guidance or d.get("guidance", 6.0),
         width=req.width or d.get("width", 832),
