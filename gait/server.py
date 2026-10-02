@@ -1,3 +1,4 @@
+import json
 import time
 import uuid
 from pathlib import Path
@@ -34,13 +35,22 @@ class GenRequest(BaseModel):
 
 @app.get("/api/models")
 def models():
-    return [{"id": m["id"], "name": m["name"], "defaults": m.get("defaults", {})} for m in _cfg]
+    return [{"id": m["id"], "name": m["name"], "kind": m.get("kind", "image"), "defaults": m.get("defaults", {})}
+            for m in _cfg]
 
 
-@app.post("/api/generate")
-def generate(req: GenRequest):
+@app.get("/api/catalog")
+def catalog():
+    return json.loads((ROOT / "data" / "catalog.json").read_text())
+
+
+class VideoRequest(GenRequest):
+    duration: float = Field(default=5, ge=5, le=30)
+
+
+def _prepare(req: GenRequest, kind: str):
     cfg = _models.get(req.model)
-    if not cfg:
+    if not cfg or cfg.get("kind", "image") != kind:
         raise HTTPException(404, "Неизвестная модель")
     try:
         check_prompt(req.prompt)
@@ -59,14 +69,36 @@ def generate(req: GenRequest):
         width=req.width or d.get("width", 832),
         height=req.height or d.get("height", 1216),
         seed=req.seed,
+        fps=d.get("fps", 16),
     )
+    return _providers[req.model], params
+
+
+def _save(data: bytes, ext: str) -> str:
+    name = f"{int(time.time())}-{uuid.uuid4().hex[:8]}.{ext}"
+    (OUT / name).write_bytes(data)
+    return f"/outputs/{name}"
+
+
+@app.post("/api/generate")
+def generate(req: GenRequest):
+    provider, params = _prepare(req, "image")
     try:
-        png = _providers[req.model].generate(params)
+        png = provider.generate(params)
     except Exception as e:
         raise HTTPException(500, f"Ошибка генерации: {e}")
-    name = f"{int(time.time())}-{uuid.uuid4().hex[:8]}.png"
-    (OUT / name).write_bytes(png)
-    return {"url": f"/outputs/{name}"}
+    return {"url": _save(png, "png"), "kind": "image"}
+
+
+@app.post("/api/generate-video")
+def generate_video(req: VideoRequest):
+    provider, params = _prepare(req, "video")
+    params.duration = req.duration
+    try:
+        data, ext = provider.generate_video(params)
+    except Exception as e:
+        raise HTTPException(500, f"Ошибка генерации: {e}")
+    return {"url": _save(data, ext), "kind": "video", "ext": ext}
 
 
 app.mount("/outputs", StaticFiles(directory=OUT), name="outputs")

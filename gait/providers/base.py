@@ -12,6 +12,8 @@ class GenParams:
     width: int = 832
     height: int = 1216
     seed: Optional[int] = None
+    duration: float = 5.0   # секунды (видео)
+    fps: int = 16
 
 
 class Provider(ABC):
@@ -21,3 +23,7 @@ class Provider(ABC):
     @abstractmethod
     def generate(self, params: GenParams) -> bytes:
         """Возвращает PNG-байты."""
+
+    def generate_video(self, params: GenParams) -> tuple[bytes, str]:
+        """Возвращает (байты, расширение файла)."""
+        raise NotImplementedError("Этот бэкенд не поддерживает видео")

@@ -50,7 +50,7 @@ class ComfyUIProvider(Provider):
     """Клиент к ComfyUI: POST /prompt, опрос /history, загрузка /view.
 
     Либо `checkpoint` (встроенный txt2img-граф), либо `workflow_file` — свой граф в API-формате
-    с плейсхолдерами {{prompt}}, {{negative_prompt}}, {{width}}, {{height}}, {{steps}}, {{guidance}}, {{seed}}.
+    с плейсхолдерами {{prompt}}, {{negative_prompt}}, {{width}}, {{height}}, {{steps}}, {{guidance}}, {{seed}}, а для видео ещё {{frames}}, {{fps}}, {{duration}}.
     """
 
     def _workflow(self) -> dict:
@@ -58,12 +58,13 @@ class ComfyUIProvider(Provider):
             return json.loads((ROOT / self.cfg["workflow_file"]).read_text())
         return _default_workflow(self.cfg["checkpoint"])
 
-    def generate(self, p: GenParams) -> bytes:
+    def _run(self, p: GenParams) -> tuple[bytes, str]:
         base = self.cfg["url"].rstrip("/")
         seed = p.seed if p.seed is not None else random.randint(0, 2**32 - 1)
         graph = _fill(self._workflow(), {
             "prompt": p.prompt, "negative_prompt": p.negative_prompt, "width": p.width,
             "height": p.height, "steps": p.steps, "guidance": p.guidance, "seed": seed,
+            "fps": p.fps, "duration": p.duration, "frames": int(round(p.duration * p.fps)) + 1,
         })
         timeout = self.cfg.get("timeout", 600)
         with httpx.Client(timeout=30) as c:
@@ -76,12 +77,22 @@ class ComfyUIProvider(Provider):
                 hist = c.get(f"{base}/history/{pid}").json().get(pid)
                 if hist and hist.get("outputs"):
                     for out in hist["outputs"].values():
-                        for img in out.get("images", []):
-                            v = c.get(f"{base}/view", params={
-                                "filename": img["filename"], "subfolder": img.get("subfolder", ""),
-                                "type": img.get("type", "output")})
-                            v.raise_for_status()
-                            return v.content
-                    raise RuntimeError("ComfyUI не вернул изображений")
+                        # SaveImage -> images; VideoHelperSuite/SaveVideo -> gifs / videos / images (animated)
+                        for key in ("images", "gifs", "videos"):
+                            for f in out.get(key, []):
+                                v = c.get(f"{base}/view", params={
+                                    "filename": f["filename"], "subfolder": f.get("subfolder", ""),
+                                    "type": f.get("type", "output")}, timeout=120)
+                                v.raise_for_status()
+                                return v.content, Path(f["filename"]).suffix.lstrip(".").lower() or "png"
+                    raise RuntimeError("ComfyUI не вернул файлов")
                 time.sleep(1)
         raise TimeoutError("ComfyUI: превышено время ожидания")
+
+    def generate(self, p: GenParams) -> bytes:
+        return self._run(p)[0]
+
+    def generate_video(self, p: GenParams) -> tuple[bytes, str]:
+        if not self.cfg.get("workflow_file"):
+            raise RuntimeError("Для видео нужен workflow_file (граф Wan / AnimateDiff и т.п.)")
+        return self._run(p)
