@@ -3,6 +3,9 @@
 Генератор изображений по текстовому запросу с подключаемыми моделями (в том числе без встроенной цензуры).
 
 ## Запуск
+Windows: установи [Python 3.10+](https://www.python.org/downloads/) (галочка «Add python.exe to PATH»), затем дважды кликни `run.bat` в папке проекта.
+
+Вручную:
 ```
 pip install -r requirements.txt
 uvicorn gait.server:app --reload
